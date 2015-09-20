@@ -96,7 +96,7 @@
 #pragma mark Frame
 
 - (CGRect)textRectForBounds:(CGRect)bounds {
-    return CGRectMake(20.0f, 0.0f, CGRectGetWidth(bounds) - 30.0f, CGRectGetHeight(bounds));
+    return CGRectMake(20.0f, CGRectGetMaxX(self.leftView.frame), CGRectGetWidth(bounds) - 30.0f, CGRectGetHeight(bounds));
 }
 
 - (CGRect)placeholderRectForBounds:(CGRect)bounds {
